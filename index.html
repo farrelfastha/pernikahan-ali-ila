@@ -98,7 +98,7 @@
             <h2 class="title">ALI</h2>
             <h2 class="title">&</h2>
             <h2 class="title">ILA</h2>
-            <h4 class="subtitle tempatwaktu">
+            <!-- <h4 class="subtitle tempatwaktu">
               
                 Sabtu, 4 Oktober 2025 
                 </br>
@@ -106,7 +106,23 @@
                 </br>
                 Mojokerto
               
-            </h4>
+            </h4> -->
+
+            <div class="tujuan-undangan has-text-centered" >
+              <p>Kepada Yth.</p>
+              <h2 id="nama-tamu" class="bodytext" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 20px;">Bapak/Ibu/Saudara/i</h2>
+              <p>di Tempat</p>
+            </div>
+
+            <script>
+              // Ambil parameter dari URL, contoh: ?to=Pak+Andi
+              const urlParams = new URLSearchParams(window.location.search);
+              const namaTamu = urlParams.get('to');
+            
+              if(namaTamu){
+                document.getElementById("nama-tamu").textContent = namaTamu;
+              }
+            </script>
           </div>
           <!-- Start Countdown -->       
           <div>
